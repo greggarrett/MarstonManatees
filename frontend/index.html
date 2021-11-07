@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Site icon -->
+    <link rel="icon" href="brain.png">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Marston Manatees Project</title>
+  </head>
+  <body class="d-flex flex-column border border-white" onresize="">
+    <div class="p-3 border border-white" align="center">
+      <h1>Brain Tumor Scanner</h1>
+    </div>
+    <div class = "p-2 border border-white" align="center">
+      <form runat="server">
+        <label for="input">Upload your brain scan:</label>
+        <input type="file" id="img-input" name="input" accept=".jpg, .jpeg" onchange=loadFile(event)>
+        <button type="button" class="btn btn-secondary" onclick="submit()">Submit</button>
+      </form>
+      
+    </div>
+    <div class="p-3 border border-white">
+      <img src = "#" id="img-output" width="100%">
+    </div>
+    
+
+    
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="..\node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+    <!-- External Javascript -->
+    <script src="/frontend/javascript/main.js"></script>
+
+  </body>
+</html>
