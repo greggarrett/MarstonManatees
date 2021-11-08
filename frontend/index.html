@@ -11,20 +11,26 @@
 
     <title>Marston Manatees Project</title>
   </head>
-  <body class="d-flex flex-column border border-white" onresize="">
-    <div class="p-3 border border-white" align="center">
+  <body class="d-flex flex-column" onresize="">
+    <div class="p-3" align="center">
       <h1>Brain Tumor Scanner</h1>
     </div>
-    <div class = "p-2 border border-white" align="center">
+    <div class = "p-2" align="center">
       <form runat="server">
-        <label for="input">Upload your brain scan:</label>
-        <input type="file" id="img-input" name="input" accept=".jpg, .jpeg" onchange=loadFile(event)>
-        <button type="button" class="btn btn-secondary" onclick="submit()">Submit</button>
+        <div class ="p-1">
+          <label for="img-input" class="btn btn-secondary">
+            <i class="fa fa-cloud-upload"></i> Upload Image
+        </label>
+          <input class ="btn btn-secondary" type="file" id="img-input" name="input" accept=".jpg, .jpeg" target = "hidden-iframe" onchange=loadFile(event)>
+          <iframe name="hidden-iframe" style="display: none;"></iframe>
+        </div>
+        <div class = "p-1">
+          <button type="button" class="btn btn-secondary" oninput="submit(event)">Submit</button>
+        </div>
       </form>
-      
     </div>
-    <div class="p-3 border border-white">
-      <img src = "#" id="img-output" width="100%">
+    <div class="p-3" align="center">
+      <img src = "#" id="img-output" width="50%">
     </div>
     
 

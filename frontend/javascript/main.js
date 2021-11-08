@@ -8,7 +8,8 @@ var loadFile = function(event) {
     }
   };
 
-function submit() {
+function submit(event) {
     //When user presses submit, send the image to the server
-    
+    event.preventDefault();//Stops the page from reloading
+    return false;
 }

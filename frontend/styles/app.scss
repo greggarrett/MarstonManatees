@@ -24,9 +24,36 @@ $text-muted: #e0e0e0;
 $border-radius: 0.75rem;
 
 $font-size-base: 0.9375rem;
-// $font-family-base: "SourceSansPro";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 /*Site CSS Starts Here*/
-/*CSS for tree-list is from https://www.w3schools.com/howto/howto_js_treeview.asp*/
+
+body {
+  background-color: #222;
+  color: rgb(216, 216, 216);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-active {
+  background-color: #5a6268;
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
